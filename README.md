@@ -1,4 +1,4 @@
-# Root access Plugin
+# Root access Plugin  [![Pub](https://img.shields.io/pub/v/box2d.svg)](https://pub.dartlang.org/packages/root_access)
 A Flutter plugin for getting root access in Android apps.
 
 #### This plugin is based on [RootTools](https://github.com/Stericson/RootTools) by [Stericson](https://github.com/Stericson).
