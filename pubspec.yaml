@@ -2,7 +2,10 @@ name: root_access
 description: A new Flutter plugin for root access in Android.
 version: 1.0.0
 author: Amit Khairnar <amitkhairnar44@gmail.com>
-homepage:
+homepage: https://github.com/amitkhairnar44/root_access
+
+environment:
+  sdk: '>=2.0.0-dev.58.0 <3.0.0'
 
 dependencies:
   flutter:
