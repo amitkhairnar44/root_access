@@ -6,3 +6,9 @@
 pubspec.lock
 
 build/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
