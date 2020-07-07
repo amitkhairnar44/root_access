@@ -1,7 +1,6 @@
 name: root_access
 description: Flutter plugin to get root access in Android device. This plugin is Android exclusive only.
 version: 1.0.3
-author: Amit Khairnar <amitkhairnar44@gmail.com>
 homepage: https://github.com/amitkhairnar44/root_access
 
 environment:
