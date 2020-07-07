@@ -28,11 +28,11 @@ public class RootAccessPlugin implements FlutterPlugin, MethodCallHandler {
 
     @Override
     public void onMethodCall(@NonNull MethodCall call, @NonNull Result result) {
-      if (call.method.equals("isAccessGiven")) {
-        result.success(isAccessGiven());
-      } else {
-        result.notImplemented();
-      }
+        if (call.method.equals("isAccessGiven")) {
+            result.success(isAccessGiven());
+        } else {
+            result.notImplemented();
+        }
     }
 
     private boolean isAccessGiven() {
