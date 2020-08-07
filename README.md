@@ -13,22 +13,22 @@ A Flutter plugin for getting root access in Android apps.
 Follow the [plugin installation instructions](https://pub.dartlang.org/packages/root_access#-installing-tab-).
 
 ### Use the plugin
-```
+```dart
 import 'package:root_access/root_access.dart';
 ```
 
 Define a bool variable and assign a value
-```
+```dart
 bool _rootStatus = false;
 ```
 
 The ```RootAccess``` class provides a getter to get root access and status
-```
+```dart
 bool rootStatus = await RootAccess.rootAccess;
 ```
 
 Declare an async method to retrieve root access
-```
+```dart
 Future<void> initRootRequest() async {
     bool rootStatus = await RootAccess.rootAccess;
     setState(() {
