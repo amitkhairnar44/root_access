@@ -1,4 +1,5 @@
 [![pub package](https://img.shields.io/pub/v/root_access.svg)](https://pub.dartlang.org/packages/root_access)
+[![Tests](https://github.com/amitkhairnar44/root_access/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/amitkhairnar44/root_access/actions/workflows/main.yml)
 
 # Root access Plugin
 A Flutter plugin for requesting root access in Android apps.
