@@ -1,7 +1,7 @@
 [![pub package](https://img.shields.io/pub/v/root_access.svg)](https://pub.dartlang.org/packages/root_access)
 
 # Root access Plugin
-A Flutter plugin for getting root access in Android apps.
+A Flutter plugin for requesting root access in Android apps.
 
 #### This plugin is based on [RootTools](https://github.com/Stericson/RootTools) by [Stericson](https://github.com/Stericson).
 
@@ -24,13 +24,13 @@ bool _rootStatus = false;
 
 The ```RootAccess``` class provides a getter to get root access and status
 ```dart
-bool rootStatus = await RootAccess.rootAccess;
+bool rootStatus = await RootAccess.requestRootAccess;
 ```
 
 Declare an async method to retrieve root access
 ```dart
 Future<void> initRootRequest() async {
-    bool rootStatus = await RootAccess.rootAccess;
+    bool rootStatus = await RootAccess.requestRootAccess;
     setState(() {
       _rootStatus = rootStatus;
     });

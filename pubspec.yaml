@@ -1,11 +1,11 @@
 name: root_access
-description: Flutter plugin to get root access in Android device. This plugin is Android exclusive only.
-version: 1.0.3
+description: Flutter plugin to request root access in Android device. This plugin is Android exclusive only.
+version: 1.0.4
 homepage: https://github.com/amitkhairnar44/root_access
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.10.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:

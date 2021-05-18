@@ -18,7 +18,7 @@ void main() {
     expect(
         find.byWidgetPredicate(
           (Widget widget) =>
-              widget is Text && widget.data.startsWith('Root access granted:'),
+              widget is Text && widget.data!.startsWith('Root access granted:'),
         ),
         findsOneWidget);
   });

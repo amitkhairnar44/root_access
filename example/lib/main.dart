@@ -20,7 +20,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> initRootRequest() async {
-    bool rootAccess = await RootAccess.rootAccess;
+    bool rootAccess = await RootAccess.requestRootAccess;
 
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
@@ -34,13 +34,13 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      home: new Scaffold(
-        appBar: new AppBar(
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: new Center(
-          child: new Text('Root access granted: $_rootAccess\n'),
+        body: Center(
+          child: Text('Root access granted: $_rootAccess\n'),
         ),
       ),
     );
