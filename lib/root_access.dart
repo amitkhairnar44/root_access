@@ -2,16 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-/// Provides a way to get root access.
+/// Provides a way to request root access.
 class RootAccess {
-  /// Channel used to communicate to native code.
+  /// Channel used to communicate with native code.
   static const MethodChannel _channel = const MethodChannel('root_access');
-
-  @Deprecated("Use requestRootAccess instead")
-  static Future<bool> get rootAccess async {
-    final bool access = await _channel.invokeMethod('isAccessGiven');
-    return access;
-  }
 
   /// Triggers app to request root access
   ///
