@@ -1,22 +1,30 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:root_access/root_access.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  _MyAppState createState() => new _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   bool _rootAccess = false;
 
   @override
-  void initState() {
-    super.initState();
-    initRootRequest();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: Center(
+          child: Text('Root access granted: $_rootAccess\n'),
+        ),
+      ),
+    );
   }
 
   Future<void> initRootRequest() async {
@@ -33,16 +41,8 @@ class _MyAppState extends State<MyApp> {
   }
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: Center(
-          child: Text('Root access granted: $_rootAccess\n'),
-        ),
-      ),
-    );
+  void initState() {
+    super.initState();
+    initRootRequest();
   }
 }
